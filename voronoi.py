@@ -10,7 +10,7 @@ rng = np.random.default_rng()
 
 
 def rand_points(n_points=10):
-    return rng.uniform(low=n_points, high=n_points * 10, size=(n_points, 2))
+    return rng.uniform(low=0, high=n_points * 10, size=(n_points, 2))
 
 
 def setup_plot():
