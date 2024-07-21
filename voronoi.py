@@ -52,7 +52,7 @@ def get_scatter_plot(points: np.ndarray[np.float64], ax: plt.Axes) -> io.BytesIO
 
 
 def extract_points(
-    img: np.ndarray[np.uint8],
+    img: io.BytesIO,
 ) -> tuple[np.ndarray[np.float64], cv2.typing.MatLike]:
     # Read image from buffer
     image_cv = cv2.imdecode(np.frombuffer(img.read(), np.uint8), 1)
